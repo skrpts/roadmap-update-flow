@@ -1,0 +1,41 @@
+# --- Identity ---
+name: "roadmap-update-flow"
+display_name: "Roadmap Update Flow"
+description: "Revises roadmap based on velocity trends and priority changes"
+version: "1.0.0"
+engine: ">=1.0.0"
+
+# --- Attribution ---
+author:
+  name: "skrptiq"
+  url: "https://hub.skrptiq.ai"
+
+licence: "MIT"
+repository: "https://github.com/skrpts/roadmap-update-flow"
+
+# --- Discovery (Hub) ---
+category: "project-manager"
+tags:
+  - "roadmap"
+  - "planning"
+  - "product"
+
+# --- Security & Access ---
+requires:
+  services:
+    - "anthropic-claude"
+    - "openai-gpt4"
+    - "jira-cloud"
+  permissions: []
+  data_handling: []
+
+# --- Contents ---
+contents:
+  skills: 2
+  prompts: 3
+  workflows: 1
+  services: 0
+  sources: 0
+  documents: 0
+  assets: 1
+  total: 7
