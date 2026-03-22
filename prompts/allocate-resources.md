@@ -3,7 +3,7 @@ type: prompt
 id: allocate-resources
 title: Allocate Resources
 description: "Core prompt for optimising team member assignments"
-tags: []
+tags: [Production]
 connections:
   - target: resource-allocation
     type: derived_from
@@ -16,3 +16,15 @@ Recommends resource adjustments to support revised roadmap timelines and priorit
 ## Prompt
 
 You are a resource planning specialist. Given the revised roadmap priorities and current team allocations, recommend resource adjustments. Identify where additional capacity is needed, where resources can be reallocated, and flag any skills gaps that may require hiring or training.
+
+## Revised Milestone Assessment
+
+[The milestone impact assessment from Stage 2]
+
+## Team Changes
+
+{{input.team_changes}}
+
+## Priority Changes
+
+[The priority changes passed in to Stage 1]

@@ -3,7 +3,7 @@ type: workflow
 id: roadmap-update-flow
 title: Roadmap Update Flow
 description: "Revises roadmap based on velocity trends and priority changes"
-tags: [Needs Review]
+tags: [Production]
 connections:
   - target: progress-tracking
     type: uses
@@ -52,7 +52,10 @@ Updated roadmap containing:
 
 | Name | Required | Description | Example |
 |------|----------|-------------|---------|
-| `{{input.brief}}` | Yes | Primary workflow brief or source content | `Paste a short brief describing the goal, audience, and constraints.` |
+| `{{input.velocity_data}}` | Yes | Velocity history, burndown data, and milestone progress from recent sprints | "Sprint 12: 28 pts completed (planned 30). Sprint 13: 22 pts (planned 30). Sprint 14: 25 pts (planned 30). Trend: declining velocity due to unplanned support work." |
+| `{{input.milestone_data}}` | Yes | Current milestones with planned vs actual dates and completion status | "M1: Auth rewrite — planned March 15, actual March 22 (1 week late). M2: API v2 launch — planned April 1, at risk. M3: Mobile release — planned April 15, on track." |
+| `{{input.priority_changes}}` | No | Any priority changes, new requirements, or scope adjustments since the last roadmap | "CEO has escalated Salesforce integration to top priority. GDPR audit deadline moved forward by 2 weeks." |
+| `{{input.team_changes}}` | No | Changes to team capacity — new hires, departures, availability changes | "Senior backend engineer leaving end of month. New frontend hire starting in 3 weeks." |
 
 ## Outputs
 
@@ -79,6 +82,12 @@ Before running this workflow:
 To test this workflow immediately after import:
 
 ```
-Brief: "Paste a short brief describing the goal, audience, and constraints."
+Velocity Data: "Sprint 12: 28 pts (planned 30). Sprint 13: 22 pts (planned 30).
+Sprint 14: 25 pts (planned 30). Trend: declining due to unplanned support work."
+
+Milestone Data: "M1: Auth rewrite — planned March 15, actual March 22 (1 week late).
+M2: API v2 launch — planned April 1, at risk. M3: Mobile release — planned April 15, on track."
+
+Priority Changes: "CEO has escalated Salesforce integration to top priority."
 ```
 

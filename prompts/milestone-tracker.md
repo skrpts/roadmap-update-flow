@@ -3,7 +3,7 @@ type: prompt
 id: milestone-tracker
 title: Milestone Tracker
 description: "Task prompt for assessing velocity impact on milestones"
-tags: []
+tags: [Production]
 connections:
   - target: progress-tracking
     type: derived_from
@@ -16,3 +16,11 @@ Projects milestone delivery dates based on current velocity trends and priority 
 ## Prompt
 
 Given the following project milestones, current velocity trend, and any priority changes, assess each milestone's projected delivery date. Compare projected dates against planned dates, flag any milestones at risk of slipping, and recommend corrective actions such as scope reduction, resource addition, or deadline adjustment.
+
+## Velocity Trend Analysis
+
+[The velocity trend analysis from Stage 1]
+
+## Priority Changes
+
+[The priority changes passed in to Stage 1]
