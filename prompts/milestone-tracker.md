@@ -19,8 +19,8 @@ Given the following project milestones, current velocity trend, and any priority
 
 ## Velocity Trend Analysis
 
-[The velocity trend analysis from Stage 1]
+{{steps.track-progress.output}}
 
 ## Priority Changes
 
-[The priority changes passed in to Stage 1]
+{{input.priority_changes}}

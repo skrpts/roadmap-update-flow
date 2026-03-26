@@ -19,7 +19,7 @@ You are a resource planning specialist. Given the revised roadmap priorities and
 
 ## Revised Milestone Assessment
 
-[The milestone impact assessment from Stage 2]
+{{steps.milestone-tracker.output}}
 
 ## Team Changes
 
@@ -27,4 +27,4 @@ You are a resource planning specialist. Given the revised roadmap priorities and
 
 ## Priority Changes
 
-[The priority changes passed in to Stage 1]
+{{input.priority_changes}}
