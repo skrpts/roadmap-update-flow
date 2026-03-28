@@ -15,6 +15,8 @@ connections:
     type: uses
   - target: milestone-tracker
     type: uses
+  - target: llm-service
+    type: runs_on
 ---
 
 ## Overview

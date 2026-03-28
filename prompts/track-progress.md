@@ -11,16 +11,12 @@ connections:
 
 ## Purpose
 
-Analyses project metrics to identify velocity trends and their impact on roadmap projections.
+Analyses project metrics to identify trends, highlight achievements, and flag concerns that should be communicated to stakeholders.
 
 ## Prompt
 
-You are a project analytics specialist. Given the following project metrics (velocity history, burndown data, milestone progress), analyse trends over the last several sprints. Identify whether velocity is stable, increasing, or declining. Project forward to estimate likely completion dates for upcoming milestones based on current trends.
+You are a project analytics specialist. Given the following project metrics (velocity, burndown, milestone progress), analyse the data and produce a progress summary. Identify positive trends, areas of concern, and any metrics that deviate significantly from plan. Provide context for variances and recommend actions where appropriate.
 
-## Project Metrics
+### Inputs
 
-**Velocity data:** {{input.velocity_data}}
-
-**Milestone data:** {{input.milestone_data}}
-
-**Priority changes:** {{input.priority_changes}}
+{{input.sprint_data}}

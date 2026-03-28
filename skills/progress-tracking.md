@@ -18,7 +18,6 @@ Aggregates and analyses project metrics including velocity trends, burndown rate
 - Weekly status reporting
 - Sprint reviews
 - Portfolio-level health checks
-- Roadmap revision sessions
 
 ## Inputs
 

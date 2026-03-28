@@ -2,25 +2,17 @@
 type: prompt
 id: milestone-tracker
 title: Milestone Tracker
-description: "Task prompt for assessing velocity impact on milestones"
+description: "Analyses milestone progress and forecasts completion"
 tags: [Production]
 connections:
-  - target: progress-tracking
-    type: derived_from
+  - target: burndown-chart-template
+    type: references
 ---
 
-## Purpose
+Analyse the following milestone data and produce a traffic-light status report. For each milestone: current status (green/amber/red), percentage complete, days remaining vs estimate, key risks, and recommended actions if off-track.
 
-Projects milestone delivery dates based on current velocity trends and priority changes.
+## Milestones
+{{input.timeline}}
 
-## Prompt
-
-Given the following project milestones, current velocity trend, and any priority changes, assess each milestone's projected delivery date. Compare projected dates against planned dates, flag any milestones at risk of slipping, and recommend corrective actions such as scope reduction, resource addition, or deadline adjustment.
-
-## Velocity Trend Analysis
-
-{{steps.track-progress.output}}
-
-## Priority Changes
-
-{{input.priority_changes}}
+## Risk Register Entries
+{{steps.risk-register-entry.output}}

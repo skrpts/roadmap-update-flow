@@ -11,20 +11,13 @@ connections:
 
 ## Purpose
 
-Recommends resource adjustments to support revised roadmap timelines and priorities.
+Produces balanced work assignments by matching team member skills and availability to sprint backlog items.
 
 ## Prompt
 
-You are a resource planning specialist. Given the revised roadmap priorities and current team allocations, recommend resource adjustments. Identify where additional capacity is needed, where resources can be reallocated, and flag any skills gaps that may require hiring or training.
+You are a resource planning specialist. Using the sprint plan and capacity analysis below, produce optimal assignments for each team member.
 
-## Revised Milestone Assessment
+- **Sprint plan:** {{steps.sprint-plan-generator.output}}
+- **Capacity analysis:** {{steps.capacity-planner.output}}
 
-{{steps.milestone-tracker.output}}
-
-## Team Changes
-
-{{input.team_changes}}
-
-## Priority Changes
-
-{{input.priority_changes}}
+Balance workload evenly, match skills to tasks, flag any conflicts or over-allocations, and provide rationale for each assignment.

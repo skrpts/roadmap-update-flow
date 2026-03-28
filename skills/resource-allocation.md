@@ -18,7 +18,6 @@ Balances workload across team members considering their skills, current commitme
 - Sprint planning
 - Mid-sprint rebalancing
 - Cross-team resource requests
-- Roadmap resource planning
 
 ## Inputs
 
