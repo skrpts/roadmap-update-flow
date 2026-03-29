@@ -3,7 +3,7 @@ type: workflow
 id: roadmap-update-flow
 title: Roadmap Update Flow
 description: "Revises roadmap based on velocity trends and priority changes"
-tags: [Production]
+tags: [Production, planning:sprint, planning:product]
 connections:
   - target: progress-tracking
     type: uses
