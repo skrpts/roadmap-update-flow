@@ -3,7 +3,7 @@ id: "fbff2d7a-2208-4e2b-ba8b-a42988fc53fc"
 name: "roadmap-update-flow"
 display_name: "Roadmap Update Flow"
 description: "Revises roadmap based on velocity trends and priority changes"
-version: "1.0.0"
+version: "1.0.2"
 engine: ">=1.0.0"
 
 # --- Attribution ---
