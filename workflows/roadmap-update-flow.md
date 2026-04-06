@@ -9,12 +9,6 @@ connections:
     type: uses
   - target: resource-allocation
     type: uses
-  - target: track-progress
-    type: uses
-  - target: allocate-resources
-    type: uses
-  - target: milestone-tracker
-    type: uses
   - target: llm-service
     type: runs_on
 ---
