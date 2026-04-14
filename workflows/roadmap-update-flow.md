@@ -11,6 +11,10 @@ connections:
     type: uses
   - target: llm-service
     type: runs_on
+output_step: "resource-allocation"
+composite_steps:
+  - "progress-tracking"
+  - "resource-allocation"
 execution:
   - skill: "progress-tracking"
     step_type: "synthesis"
