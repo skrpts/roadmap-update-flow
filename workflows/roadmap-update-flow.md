@@ -9,9 +9,11 @@ connections:
     type: uses
   - target: resource-allocation
     type: uses
+  - target: language-polish
+    type: uses
   - target: llm-service
     type: runs_on
-output_step: "resource-allocation"
+output_step: "language-polish"
 composite_steps:
   - "progress-tracking"
   - "resource-allocation"
@@ -20,6 +22,8 @@ execution:
     step_type: "synthesis"
   - skill: "resource-allocation"
     step_type: "synthesis"
+  - skill: "language-polish"
+    step_type: "content"
 ---
 
 ## Overview
@@ -95,4 +99,3 @@ M2: API v2 launch — planned April 1, at risk. M3: Mobile release — planned A
 
 Priority Changes: "CEO has escalated Salesforce integration to top priority."
 ```
-
