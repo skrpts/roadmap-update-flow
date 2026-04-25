@@ -20,6 +20,7 @@ composite_steps:
 execution:
   - skill: "progress-tracking"
     step_type: "synthesis"
+    prompt: "roadmap-status-brief"
   - skill: "resource-allocation"
     step_type: "synthesis"
   - skill: "language-polish"
