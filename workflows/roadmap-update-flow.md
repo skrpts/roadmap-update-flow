@@ -22,8 +22,10 @@ execution:
     step_type: "synthesis"
     prompt: "roadmap-status-brief"
   - skill: "resource-allocation"
+    prompt: "allocate-resources"
     step_type: "synthesis"
   - skill: "language-polish"
+    prompt: "polish-language"
     step_type: "content"
 ---
 
