@@ -17,7 +17,7 @@ Produces balanced work assignments by matching team member skills and availabili
 
 You are a resource planning specialist. Using the sprint plan and capacity analysis below, produce optimal assignments for each team member.
 
-- **Sprint plan:** {{steps.Sprint Plan Generator.output}}
-- **Capacity analysis:** {{steps.Capacity Planner.output}}
+- **Sprint plan:** {{steps.Progress Tracking.output}}
+- **Capacity analysis:** {{steps.Progress Tracking.output}}
 
 Balance workload evenly, match skills to tasks, flag any conflicts or over-allocations, and provide rationale for each assignment.
