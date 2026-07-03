@@ -1,5 +1,8 @@
 # Release Notes
 
+## v1.1.22
+GH#753 — supply allocate-resources via `bindings: sprint_plan { from_step: "Progress Tracking" }` and re-pin to v1.0.3, fixing the previously-dangling {{steps.Sprint Planning.output}} ref. Also declare per-step `output: {name,type}` (GH#745). Canonical scan clean.
+
 ## v1.1.21
 GH#645 Row 3b — migrate to K-037 dep-referenced schema. Strip 8 inline shared-content files and declare 8 hub-shared deps (UUID id + slug name + version + checksum from `gen-dep-checksums.mjs`). Closes pre-Step-3 inline-vendoring for this bundle.
 

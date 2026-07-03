@@ -21,12 +21,19 @@ execution:
   - skill: "progress-tracking"
     step_type: "synthesis"
     prompt: "roadmap-status-brief"
+    output: { name: "roadmap_status", type: "text" }
   - skill: "resource-allocation"
     prompt: "allocate-resources"
     step_type: "synthesis"
+    output: { name: "resource_allocation", type: "text" }
+    bindings:
+      sprint_plan:
+        from_step: "Progress Tracking"
+        field: output
   - skill: "language-polish"
     prompt: "polish-language"
     step_type: "content"
+    output: { name: "polished_roadmap", type: "text" }
     context:
       voice_profile: "Neutral professional tone"
       grammar_strictness: "Professional"

@@ -3,7 +3,7 @@ id: "fbff2d7a-2208-4e2b-ba8b-a42988fc53fc"
 name: "roadmap-update-flow"
 display_name: "Roadmap Update Flow"
 description: "Revises roadmap based on velocity trends and priority changes"
-version: "1.1.21"
+version: "1.1.22"
 engine: ">=0.1.0"
 
 # --- Attribution ---
@@ -25,8 +25,8 @@ tags:
 dependencies:
   - id: "0a6f89e5-1da9-4760-9ad3-869638b3856e"
     name: "allocate-resources"
-    version: 1.0.1
-    checksum: "sha256:ba24f9ef535a6015af21f248014dfa3bfe596926d9f46f4d6616e129a64fbe94"
+    version: 1.0.3
+    checksum: "sha256:25e616464701c6195a756b3cdf0fa3a3b6120795614501765afcf72c954b6f42"
   - id: "c2895a43-e500-479f-a1d8-90ce0f76c0b7"
     name: "burndown-chart-template"
     version: 1.0.1
@@ -73,3 +73,17 @@ contents:
   documents: 0
   assets: 0
   total: 2
+
+security:
+  status: "pass"
+  scanned_at: "2026-07-03T11:08:17.853Z"
+  scanner_version: "3.3.0"
+  syntactic: "pass"
+  structural: "pass"
+  detected:
+    services: ["llm-service"]
+    permissions: []
+    data_handling: []
+  undeclared: []
+  warnings: []
+  report_url: "https://hub.skrptiq.ai/skrpts/roadmap-update-flow/security"
