@@ -41,13 +41,13 @@ execution:
 
 ## Overview
 
-This workflow analyses current velocity trends and priority shifts to produce an updated project roadmap with revised timelines and resource needs.
+This workflow analyzes current velocity trends and priority shifts to produce an updated project roadmap with revised timelines and resource needs.
 
 ## Pipeline Stages
 
 ### Stage 1: Progress Analysis
 
-Invoke the **progress-tracking** skill to gather and analyse velocity trends, burndown data, and milestone completion rates.
+Invoke the **progress-tracking** skill to gather and analyze velocity trends, burndown data, and milestone completion rates.
 
 ### Stage 2: Milestone Impact Assessment
 
@@ -90,7 +90,7 @@ Updated roadmap containing:
 Before running this workflow:
 
 1. No external services required — paste your content directly and provide any supporting context as inputs or source nodes.
-2. Review the included documents, assets, or source nodes and customise them to match your team, brand, or domain conventions where needed.
+2. Review the included documents, assets, or source nodes and customize them to match your team, brand, or domain conventions where needed.
 3. No specific AI provider or API key is required beyond your configured skrptiq LLM provider.
 
 ## Provider Notes

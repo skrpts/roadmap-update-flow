@@ -1,5 +1,8 @@
 # Release Notes
 
+## v1.1.23
+GH#845 — republish with American English (en-US) content, completing the source-only GH#805 flip that never reached the Hub. Copy only — no functional or behaviour change.
+
 ## v1.1.22
 GH#753 — supply allocate-resources via `bindings: sprint_plan { from_step: "Progress Tracking" }` and re-pin to v1.0.3, fixing the previously-dangling {{steps.Sprint Planning.output}} ref. Also declare per-step `output: {name,type}` (GH#745). Canonical scan clean.
 
@@ -19,4 +22,4 @@ Bundle re-signed with canonical engine signing pipeline (Wave 2 migration).
 Signature fix — RELEASE_NOTES.md now included in integrity checksum.
 
 ## v1.1.16
-Initial catalogue release with full structural and content-quality validation. All scanner checks pass.
+Initial catalog release with full structural and content-quality validation. All scanner checks pass.
